@@ -1,4 +1,4 @@
-package intervalTree;
+package s3f.pyrite.core.intervaltree;
 
 /**
  * The Interval class maintains an interval with some associated data
