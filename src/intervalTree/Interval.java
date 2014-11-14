@@ -1,4 +1,4 @@
-package intervalTree;
+package s3f.pyrite.core.intervaltree;
 
 /**
  * The Interval class maintains an interval with some associated data
@@ -44,10 +44,10 @@ public class Interval<Type> implements Comparable<Interval<Type>> {
 	
 	/**
 	 * @param time
-	 * @return	true if this interval contains time (invlusive)
+	 * @return	true if this interval contains time (inclusive)
 	 */
 	public boolean contains(long time) {
-		return time < end && time > start;
+		return time <= end && time >= start;
 	}
 	
 	/**
@@ -55,7 +55,7 @@ public class Interval<Type> implements Comparable<Interval<Type>> {
 	 * @return	return true if this interval intersects other
 	 */
 	public boolean intersects(Interval<?> other) {
-		return other.getEnd() > start && other.getStart() < end;
+		return other.getEnd() >= start && other.getStart() <= end;
 	}
 	
 	/**

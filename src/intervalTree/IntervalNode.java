@@ -1,4 +1,4 @@
-package intervalTree;
+package s3f.pyrite.core.intervaltree;
 
 import java.util.ArrayList;
 import java.util.List;
